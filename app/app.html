@@ -1,0 +1,31 @@
+<ion-menu [content]="content" primary>
+
+  <ion-toolbar favorite>
+    <ion-title>Menu</ion-title>
+   <ion-avatar item-left>
+      <img src="img/avatar-cher.png">
+    </ion-avatar>
+  </ion-toolbar>
+
+  <ion-content>
+    <ion-list>
+  <ion-list-header>
+    Action
+  </ion-list-header>
+   <button ion-item *ngFor="let p of pages" menuClose (click)="openPage(p)">
+        {{p.title}}
+    </button>  
+  <ion-item>  <ion-icon name="leaf" item-left></ion-icon>Terminator II</ion-item>
+  <ion-item> <ion-icon name="leaf" item-left></ion-icon> The Empire Strikes Back</ion-item>
+  <ion-item> <ion-icon name="leaf" item-left></ion-icon> Blade Runner</ion-item>
+  <ion-list-header>
+    NoAction
+  </ion-list-header>
+  <ion-item> <ion-icon name="leaf" item-left></ion-icon> Terminator II</ion-item>
+  <ion-item> <ion-icon name="leaf" item-left></ion-icon> The Empire Strikes Back</ion-item>
+  <ion-item> <ion-icon name="leaf" item-left></ion-icon> Blade Runner</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
