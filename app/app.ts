@@ -6,7 +6,14 @@ import {MenuPage} from './pages/menu/menu';
 import {HomePage} from './pages/home/home';
 import {CardPage} from './pages/card/card';
 import {ActionSheetsPage} from './pages/ActionSheets/ActionSheets';
-
+import {AppVersionPage} from './pages/appVersion/appVersion';
+import {BadgePage} from './pages/badge/badge';
+import {BarcodePage} from './pages/barcode/barcode';
+import {ToastPage} from './pages/toast/toast';
+import {VibrationPage} from './pages/vibration/vibration';
+import {SpinnerPage} from './pages/spinner/spinner';
+import {EmailcomposerPage} from './pages/emailcomposer/emailcomposer';
+import {FlashlightPage} from './pages/flashlight/flashlight';
 
 @Component({
   templateUrl: './build/app.html',
@@ -15,18 +22,32 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
   private rootPage:any; 
 pages: Array<{title: string, component: any}>;
+nativePages: Array<{title: string, component: any}>;
   constructor(private platform:Platform, private menu: MenuController ) {
     this.rootPage = HomePage;
      this.pages = [
-      { title: "My ChatRooms", component: HomePage },
-      { title: "Public Chat Rooms", component: TabsPage },
+      { title: 'Action Sheet', component:ActionSheetsPage}, 
       { title: "Card Demo", component: CardPage },
-      {title: 'Action Sheet', component:ActionSheetsPage}           
+      { title: "My ChatRooms", component: HomePage },
+      { title: "Public Chat Rooms", component: TabsPage }
     ];     
+    this.nativePages=[
+      { title : "App Version", component: AppVersionPage },
+      { title : "Badge", component:BadgePage},
+      { title : "Barcode", component: BarcodePage},
+      { title : "Email Composer", component: EmailcomposerPage},
+      { title : "Flash Light", component:FlashlightPage},
+      { title : "Toast", component:ToastPage},
+      { title : "Spinner Dialog", component:SpinnerPage},
+      { title : "Vibration", component:VibrationPage}
+     
+    ]
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
+      //StatusBar.overlaysWebView(true);
+      StatusBar.backgroundColorByHexString("#F57C00");
+      //StatusBar.styleDefault();
     });
   }
 
