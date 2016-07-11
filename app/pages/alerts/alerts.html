@@ -1,12 +1,17 @@
 <ion-header>
     <ion-navbar favorite>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Alerts</ion-title>
-  </ion-navbar>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Alerts</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding class="alert">
- 
+
+    <button block dark (click)="doAlert()">Show Basic Alert</button>
+    <button secondary block (click)="doPrompt()">Show Prompt Alert</button>
+    <button primary block (click)="doConfirm()">Show Confirm Alert</button>
+    <button block light (click)="doRadio()">Show Radio Alert</button>
+    <button block danger (click)="doCheckbox()">Show Checkbox Alert</button>
 </ion-content>
