@@ -20,6 +20,7 @@ import {DateTimePage} from './pages/dateTime/dateTime';
 import {GesturesPage} from './pages/gestures/gestures';
 import {GridPage} from './pages/grid/grid';
 import {IconsPage} from './pages/icons/icons';
+import {InputPage} from './pages/inputs/inputs';
 
 @Component({
     templateUrl: './build/app.html',
@@ -44,6 +45,7 @@ constructor(private platform:Platform, private menu: MenuController ) {
         { title:  "Gesture Event", component:GesturesPage},
         { title:  "Grid Layout", component:GridPage},
         { title: "Icons",component:IconsPage},
+        { title: "Inputs",component:InputPage},
         { title: "My ChatRooms", component: HomePage },
         { title: "Public Chat Rooms", component: TabsPage }
     ];
