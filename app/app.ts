@@ -19,7 +19,9 @@ import {CheckboxPage} from './pages/checkbox/checkbox';
 import {DateTimePage} from './pages/dateTime/dateTime';
 import {GesturesPage} from './pages/gestures/gestures';
 import {GridPage} from './pages/grid/grid';
-
+import {IconsPage} from './pages/icons/icons';
+import {InputPage} from './pages/inputs/inputs';
+import {LoadingPage} from './pages/loading/loading';
 
 @Component({
     templateUrl: './build/app.html',
@@ -43,6 +45,9 @@ constructor(private platform:Platform, private menu: MenuController ) {
         { title:  "DateTime", component:DateTimePage},
         { title:  "Gesture Event", component:GesturesPage},
         { title:  "Grid Layout", component:GridPage},
+        { title: "Icons",component:IconsPage},
+        { title: "Inputs",component:InputPage},
+        { title: "Loading",component:LoadingPage},
         { title: "My ChatRooms", component: HomePage },
         { title: "Public Chat Rooms", component: TabsPage }
     ];
