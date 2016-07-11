@@ -1,31 +1,34 @@
-<ion-menu [content]="content" primary>
-
-  <ion-toolbar favorite class="menuToolbar">
-   <ion-avatar item-left>
-      <img src="img/avatar-ts-buzz.png">
+<ion-menu [content]="content">
+<ion-toolbar favorite class="menuToolbar">
+    <ion-avatar item-left>
+        <img src="img/avatar-gollum.jpg">
     </ion-avatar>
     <ion-title>Ionic 2 Demo</ion-title>
-  </ion-toolbar>
-
-  <ion-content>
+</ion-toolbar>
+<ion-content>
     <ion-list>
-  <ion-list-header>
-    HTML Components
-  </ion-list-header>
-   <button ion-item *ngFor="let p of pages" menuClose (click)="openPage(p)">
+        <ion-list-header>
+            Html Components
+        </ion-list-header>
+        <button ion-item *ngFor="let p of pages" menuClose (click)="openPage(p)">
         {{p.title}}
-    </button>
-  <ion-list-header>
-    Native Components
-  </ion-list-header>
-  <button ion-item *ngFor="let p of nativePages" menuClose (click)="openPage(p)">
+        </button>
+        <ion-list-header>
+            Native Components
+        </ion-list-header>
+        <button ion-item *ngFor="let p of nativePages" menuClose (click)="openPage(p)">
         {{p.title}}
-    </button>
-  <ion-item> <ion-icon name="leaf" item-left></ion-icon> Terminator II</ion-item>
-  <ion-item> <ion-icon name="leaf" item-left></ion-icon> The Empire Strikes Back</ion-item>
-  <ion-item> <ion-icon name="leaf" item-left></ion-icon> Blade Runner</ion-item>
+        </button>
+        <ion-list-header>
+            Contact
+        </ion-list-header>
+        <ion-list-header>
+            Settings
+        </ion-list-header>
+        <ion-item> <ion-icon name="leaf" item-left></ion-icon> Terminator II</ion-item>
+        <ion-item> <ion-icon name="leaf" item-left></ion-icon> The Empire Strikes Back</ion-item>
+        <ion-item> <ion-icon name="leaf" item-left></ion-icon> Blade Runner</ion-item>
     </ion-list>
-  </ion-content>
+</ion-content>
 </ion-menu>
-
 <ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
