@@ -14,6 +14,7 @@ import {VibrationPage} from './pages/vibration/vibration';
 import {SpinnerPage} from './pages/spinner/spinner';
 import {EmailcomposerPage} from './pages/emailcomposer/emailcomposer';
 import {FlashlightPage} from './pages/flashlight/flashlight';
+import {ToolbarPage} from './pages/toolbar/toolbar';
 
 @Component({
   templateUrl: './build/app.html',
@@ -29,7 +30,8 @@ nativePages: Array<{title: string, component: any}>;
       { title: 'Action Sheet', component:ActionSheetsPage}, 
       { title: "Card Demo", component: CardPage },
       { title: "My ChatRooms", component: HomePage },
-      { title: "Public Chat Rooms", component: TabsPage }
+      { title: "Public Chat Rooms", component: TabsPage },
+      { title: "Toolbar" , component: ToolbarPage}
     ];     
     this.nativePages=[
       { title : "App Version", component: AppVersionPage },
