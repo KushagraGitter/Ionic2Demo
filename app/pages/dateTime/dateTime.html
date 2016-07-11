@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar favorite>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>DateTime</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">  
+   <ion-list>
+     <ion-item>
+       <ion-label>Start Date</ion-label>
+       <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Start Time</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Ends</ion-label>
+      <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
+    </ion-item>
+   </ion-list>
+    
+</ion-content>
