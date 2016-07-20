@@ -22,6 +22,11 @@ import {GridPage} from './pages/grid/grid';
 import {IconsPage} from './pages/icons/icons';
 import {InputPage} from './pages/inputs/inputs';
 import {LoadingPage} from './pages/loading/loading';
+import {BasicPage} from './pages/popover/popover';
+import {RadioPage} from './pages/radio/radio';
+import {RangePage} from  './pages/range/range';
+import {SearchbarPage} from  './pages/searchbar/searchbar';
+import {SegmentPage} from  './pages/segment/segment';
 
 @Component({
     templateUrl: './build/app.html',
@@ -48,6 +53,11 @@ constructor(private platform:Platform, private menu: MenuController ) {
         { title: "Icons",component:IconsPage},
         { title: "Inputs",component:InputPage},
         { title: "Loading",component:LoadingPage},
+        { title: "Popover", component:BasicPage},
+        { title: "Radio", component:RadioPage},
+        { title: "Range", component:RangePage},
+        { title: "Searchbar", component:SearchbarPage},
+        { title: "Segment", component:SegmentPage},
         { title: "My ChatRooms", component: HomePage },
         { title: "Public Chat Rooms", component: TabsPage }
     ];
