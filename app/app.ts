@@ -27,6 +27,7 @@ import {RadioPage} from './pages/radio/radio';
 import {RangePage} from  './pages/range/range';
 import {SearchbarPage} from  './pages/searchbar/searchbar';
 import {SegmentPage} from  './pages/segment/segment';
+import {SlidesPage} from './pages/slides/slides';
 
 @Component({
     templateUrl: './build/app.html',
@@ -47,19 +48,20 @@ constructor(private platform:Platform, private menu: MenuController ) {
         { title: 'Buttons', component:ButtonPage},
         { title: "Card Demo", component: CardPage },
         { title: "Check box", component: CheckboxPage},
-        { title:  "DateTime", component:DateTimePage},
-        { title:  "Gesture Event", component:GesturesPage},
-        { title:  "Grid Layout", component:GridPage},
+        { title: "DateTime", component:DateTimePage},
+        { title: "Gesture Event", component:GesturesPage},
+        { title: "Grid Layout", component:GridPage},
         { title: "Icons",component:IconsPage},
         { title: "Inputs",component:InputPage},
         { title: "Loading",component:LoadingPage},
-        { title: "Popover", component:BasicPage},
+//        { title: "Popover", component:BasicPage},
         { title: "Radio", component:RadioPage},
         { title: "Range", component:RangePage},
         { title: "Searchbar", component:SearchbarPage},
         { title: "Segment", component:SegmentPage},
-        { title: "My ChatRooms", component: HomePage },
-        { title: "Public Chat Rooms", component: TabsPage }
+        { title: "Slides", component:SlidesPage},
+     //   { title: "My ChatRooms", component: HomePage },
+        { title: "Tabs", component: TabsPage }
     ];
 
     this.nativePages=[
