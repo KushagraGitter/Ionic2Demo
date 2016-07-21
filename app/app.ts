@@ -7,7 +7,7 @@ import {CardPage} from './pages/card/card';
 import {ActionSheetsPage} from './pages/ActionSheets/ActionSheets';
 import {AlertPage} from "./pages/alerts/alerts";
 import {BadgePage} from './pages/badges/badges';
-//import {ButtonPage} from './pages/buttons/buttons';
+import {ButtonPage} from './pages/buttons/buttons';
 import {AppVersionPage} from './pages/appVersion/appVersion';
 import {BarcodePage} from './pages/barcode/barcode';
 import {ToastPage} from './pages/toast/toast';
@@ -50,7 +50,7 @@ constructor(private platform:Platform, private menu: MenuController ) {
         { title: 'Action Sheet', component:ActionSheetsPage},
         { title: 'Alert', component:AlertPage},
         { title: 'Badges', component:BadgePage},
-       // { title: 'Buttons', component:ButtonPage},
+        { title: 'Buttons', component:ButtonPage},
         { title: "Card Demo", component: CardPage },
         { title: "Check box", component: CheckboxPage},
         { title: "DateTime", component:DateTimePage},
