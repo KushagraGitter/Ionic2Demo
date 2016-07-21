@@ -7,7 +7,7 @@ import {CardPage} from './pages/card/card';
 import {ActionSheetsPage} from './pages/ActionSheets/ActionSheets';
 import {AlertPage} from "./pages/alerts/alerts";
 import {BadgePage} from './pages/badges/badges';
-import {ButtonPage} from './pages/buttons/buttons';
+//import {ButtonPage} from './pages/buttons/buttons';
 import {AppVersionPage} from './pages/appVersion/appVersion';
 import {BarcodePage} from './pages/barcode/barcode';
 import {ToastPage} from './pages/toast/toast';
@@ -15,6 +15,9 @@ import {VibrationPage} from './pages/vibration/vibration';
 import {SpinnerPage} from './pages/spinner/spinner';
 import {EmailcomposerPage} from './pages/emailcomposer/emailcomposer';
 import {FlashlightPage} from './pages/flashlight/flashlight';
+
+import {ToolbarPage} from './pages/toolbar/toolbar';
+
 import {CheckboxPage} from './pages/checkbox/checkbox';
 import {DateTimePage} from './pages/dateTime/dateTime';
 import {GesturesPage} from './pages/gestures/gestures';
@@ -29,6 +32,7 @@ import {SearchbarPage} from  './pages/searchbar/searchbar';
 import {SegmentPage} from  './pages/segment/segment';
 import {SlidesPage} from './pages/slides/slides';
 
+
 @Component({
     templateUrl: './build/app.html',
 })
@@ -41,11 +45,13 @@ nativePages: Array<{title: string, component: any}>;
 constructor(private platform:Platform, private menu: MenuController ) {
 
     this.rootPage = HomePage;
+ 
+
     this.pages = [
         { title: 'Action Sheet', component:ActionSheetsPage},
         { title: 'Alert', component:AlertPage},
         { title: 'Badges', component:BadgePage},
-        { title: 'Buttons', component:ButtonPage},
+       // { title: 'Buttons', component:ButtonPage},
         { title: "Card Demo", component: CardPage },
         { title: "Check box", component: CheckboxPage},
         { title: "DateTime", component:DateTimePage},
@@ -61,7 +67,11 @@ constructor(private platform:Platform, private menu: MenuController ) {
         { title: "Segment", component:SegmentPage},
         { title: "Slides", component:SlidesPage},
      //   { title: "My ChatRooms", component: HomePage },
-        { title: "Tabs", component: TabsPage }
+        { title: "Tabs", component: TabsPage },
+//        { title: "My ChatRooms", component: HomePage },
+  //      { title: "Public Chat Rooms", component: TabsPage },
+        { title: "Toolbar" , component: ToolbarPage}
+
     ];
 
     this.nativePages=[
@@ -78,7 +88,7 @@ constructor(private platform:Platform, private menu: MenuController ) {
         // Okay, so the platform is ready and our plugins are available.
         // Here you can do any higher level native things you might need.
         //StatusBar.overlaysWebView(true);
-        StatusBar.backgroundColorByHexString("#F57C00");
+        StatusBar.backgroundColorByHexString("#2196f3");
         //StatusBar.styleDefault();
     });
 }
