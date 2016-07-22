@@ -7,7 +7,7 @@ import {CardPage} from './pages/card/card';
 import {ActionSheetsPage} from './pages/ActionSheets/ActionSheets';
 import {AlertPage} from "./pages/alerts/alerts";
 import {BadgePage} from './pages/badges/badges';
-//import {ButtonPage} from './pages/buttons/buttons';
+import {ButtonPage} from './pages/buttons/buttons';
 import {AppVersionPage} from './pages/appVersion/appVersion';
 import {BarcodePage} from './pages/barcode/barcode';
 import {ToastPage} from './pages/toast/toast';
@@ -15,9 +15,7 @@ import {VibrationPage} from './pages/vibration/vibration';
 import {SpinnerPage} from './pages/spinner/spinner';
 import {EmailcomposerPage} from './pages/emailcomposer/emailcomposer';
 import {FlashlightPage} from './pages/flashlight/flashlight';
-
 import {ToolbarPage} from './pages/toolbar/toolbar';
-
 import {CheckboxPage} from './pages/checkbox/checkbox';
 import {DateTimePage} from './pages/dateTime/dateTime';
 import {GesturesPage} from './pages/gestures/gestures';
@@ -30,6 +28,8 @@ import {RadioPage} from './pages/radio/radio';
 import {RangePage} from  './pages/range/range';
 import {SearchbarPage} from  './pages/searchbar/searchbar';
 import {SegmentPage} from  './pages/segment/segment';
+import {SlidesPage} from './pages/slides/slides';
+import {HtmltoastPage} from './pages/htmltoast/htmltoast';
 
 
 @Component({
@@ -50,23 +50,25 @@ constructor(private platform:Platform, private menu: MenuController ) {
         { title: 'Action Sheet', component:ActionSheetsPage},
         { title: 'Alert', component:AlertPage},
         { title: 'Badges', component:BadgePage},
-       // { title: 'Buttons', component:ButtonPage},
+        { title: 'Buttons', component:ButtonPage},
         { title: "Card Demo", component: CardPage },
         { title: "Check box", component: CheckboxPage},
-        { title:  "DateTime", component:DateTimePage},
-        { title:  "Gesture Event", component:GesturesPage},
-        { title:  "Grid Layout", component:GridPage},
+        { title: "DateTime", component:DateTimePage},
+        { title: "Gesture Event", component:GesturesPage},
+        { title: "Grid Layout", component:GridPage},
         { title: "Icons",component:IconsPage},
         { title: "Inputs",component:InputPage},
         { title: "Loading",component:LoadingPage},
-        { title: "Popover", component:BasicPage},
+//      { title: "Popover", component:BasicPage},
         { title: "Radio", component:RadioPage},
         { title: "Range", component:RangePage},
         { title: "Searchbar", component:SearchbarPage},
         { title: "Segment", component:SegmentPage},
-        { title: "My ChatRooms", component: HomePage },
-        { title: "Public Chat Rooms", component: TabsPage },
-        { title: "Toolbar" , component: ToolbarPage}
+        { title: "Slides", component:SlidesPage},     
+        { title: "Tabs", component: TabsPage },  
+        { title: "Toolbar" , component: ToolbarPage},
+        { title: "Html Toast",component:HtmltoastPage}
+
     ];
 
     this.nativePages=[

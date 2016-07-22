@@ -1,5 +1,8 @@
 <ion-header>
   <ion-navbar [attr.favorite]="isAndroid ? ' ' : null">
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-buttons start>
       <button favorite showWhen="ios,windows"><ion-icon name="search"></ion-icon></button>
       <button light hideWhen="ios,windows"><ion-icon name="search"></ion-icon></button>
